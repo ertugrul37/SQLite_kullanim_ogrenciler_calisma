@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btnEkle"
+                android:onClick="sqliteBtnClick"
+                android:text="Ekle"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnGuncelle"
+                android:onClick="sqliteBtnClick"
+                android:text="Güncelle"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btnSil"
+                android:onClick="sqliteBtnClick"
+                android:text="Sil"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnTabloyuSil"
+                android:onClick="sqliteBtnClick"
+                android:text="Tabloyu Sil"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
